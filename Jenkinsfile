@@ -12,7 +12,7 @@ pipeline {
         }
         stage('login to dockerhub') {
             steps{
-                sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_naveen1433 --navee123@-stdin'
+                sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u naveen1433 --navee123@-stdin'
             }
         }
         stage('push image') {
